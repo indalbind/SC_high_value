@@ -12,6 +12,11 @@ This repository contains solutions for the IIT Madras SC assignments and exercis
 To use the solutions, make the directories on the remote vm and use the scripts provided.
 
 ## Usage
+
+To evaluate the assignments, first log in via SSH to the provided remote VM. Ensure all assignments are located in the `~/se2001` directory.
+
+### Command Usage
+
 Usage: synchro COMMAND [ASSIGNMENT]
 Evaluation platform
 
