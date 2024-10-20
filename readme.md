@@ -18,13 +18,16 @@ To evaluate the assignments, first log in via SSH to the provided remote VM. Ens
 ### Command Usage
 
 ```bash
-synchro COMMAND [ASSIGNMENT]
+synchro COMMAND
 ```
 
 #### Available Commands
 
-- `synchro show [ASSIGNMENT]`     : Show ASSIGNMENT statement  
-- `synchro init [ASSIGNMENT]`     : Initialize ASSIGNMENT  
-- `synchro eval [ASSIGNMENT]`     : Evaluate the ASSIGNMENT  
-- `synchro status`                 : Show submission status  
-- `synchro help`                   : Show help text  
+- `synchro show`     : Show ASSIGNMENT statement  
+- `synchro init`     : Initialize ASSIGNMENT  
+- `synchro eval`     : Evaluate the ASSIGNMENT  
+- `synchro status`   : Show submission status  
+- `synchro help`     : Show help text  
+
+#### Note
+synchro command should be run in the same directory as the assignment directory.
