@@ -17,11 +17,14 @@ To evaluate the assignments, first log in via SSH to the provided remote VM. Ens
 
 ### Command Usage
 
-Usage: synchro COMMAND [ASSIGNMENT]
-Evaluation platform
+```bash
+synchro COMMAND [ASSIGNMENT]
+```
 
-synchro show [ASSIGNMENT]     show ASSIGNMENT statement
-        init [ASSIGNMENT]     initialize ASSIGNMENT
-        eval [ASSIGNMENT]     evaluate the ASSIGNMENT
-        status                show submission status
-        help                  show help text
+#### Available Commands
+
+- `synchro show [ASSIGNMENT]`     : Show ASSIGNMENT statement  
+- `synchro init [ASSIGNMENT]`     : Initialize ASSIGNMENT  
+- `synchro eval [ASSIGNMENT]`     : Evaluate the ASSIGNMENT  
+- `synchro status`                 : Show submission status  
+- `synchro help`                   : Show help text  
