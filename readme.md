@@ -6,10 +6,13 @@ This repository contains solutions for the IIT Madras SC assignments and exercis
 
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Command Usage](#command-usage)
+  - [Available Commands](#available-commands)
+  - [Notes](#notes)
 
 ## Installation
 
-To use the solutions, make the directories on the remote vm and use the scripts provided.
+To use the solutions, create the necessary directories on the remote VM and use the scripts provided.
 
 ## Usage
 
@@ -21,7 +24,7 @@ To evaluate the assignments, first log in via SSH to the provided remote VM. Ens
 synchro COMMAND
 ```
 
-#### Available Commands
+### Available Commands
 
 - `synchro show`     : Show ASSIGNMENT statement  
 - `synchro init`     : Initialize ASSIGNMENT  
@@ -29,5 +32,6 @@ synchro COMMAND
 - `synchro status`   : Show submission status  
 - `synchro help`     : Show help text  
 
-#### Note
-synchro command should be run in the same directory as the assignment directory.
+### Notes
+
+- The `synchro` command should be run in the same directory as the assignment directory.
