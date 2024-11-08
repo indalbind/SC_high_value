@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 80.2707,
+    "lat": 13.0827
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F03d.png?1499366020890"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 31.67,
+    "feels_like": 38.67,
+    "temp_min": 31.67,
+    "temp_max": 33.01,
+    "pressure": 1015,
+    "humidity": 77
+  },
+  "visibility": 8000,
+  "wind": {
+    "speed": 5.14,
+    "deg": 230
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1680669963,
+  "sys": {
+    "type": 2,
+    "id": 2012809,
+    "country": "IN",
+    "sunrise": 1680654762,
+    "sunset": 1680699031
+  },
+  "timezone": 19800,
+  "id": 1465730,
+  "name": "Park Town",
+  "cod": 200
+}
