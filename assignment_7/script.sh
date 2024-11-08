@@ -6,7 +6,6 @@ fi
 
 CITY=$1
 API_URL="http://weather.local/api/v1/city/${CITY}.json"
-
 DATA=$(curl -s "$API_URL")
 
 if [[ -z "$DATA" ]]; then
@@ -24,7 +23,7 @@ case "$2" in
                 ;;
             current)
                 TEMP=$(echo "$DATA" | jq '.main.temp')
-                FAHRENHEIT=$(echo "scale=2; ($TEMP * 9/5) + 32" | bc)
+                FAHRENHEIT=$(printf "%.2f" "$(echo "$TEMP * 9 / 5 + 32" | bc -l)")
                 echo "$DATA" | jq -c --argjson fahrenheit "$FAHRENHEIT" '{name: .name, temp: .main.temp, F: $fahrenheit}' | jq --indent 4 '.'
                 ;;
             *)
@@ -34,13 +33,13 @@ case "$2" in
         ;;
     -W)
         WIND_SPEED=$(echo "$DATA" | jq '.wind.speed')
-        SQRT_SPEED=$(echo "scale=2; sqrt($WIND_SPEED)" | bc)
+        SQRT_SPEED=$(printf "%.2f" "$(echo "sqrt($WIND_SPEED)" | bc -l)")
         echo "$DATA" | jq -c --argjson sqrt_speed "$SQRT_SPEED" '{name: .name, speed: .wind.speed, sqrtspeed: $sqrt_speed}' | jq --indent 4 '.'
         ;;
     -S)
         DATE=$(date "+%d/%m/%Y")
-        SUNRISE=$(date -d @$(echo "$DATA" | jq '.sys.sunrise') "+%H:%M:%S")
-        SUNSET=$(date -d @$(echo "$DATA" | jq '.sys.sunset') "+%H:%M:%S")
+        SUNRISE=$(date -d @"$(echo "$DATA" | jq '.sys.sunrise')" "+%H:%M:%S")
+        SUNSET=$(date -d @"$(echo "$DATA" | jq '.sys.sunset')" "+%H:%M:%S")
         jq -n --arg city "$(echo "$DATA" | jq -r '.name')" --arg date "$DATE" --arg sunrise "$SUNRISE" --arg sunset "$SUNSET" '[$city, $date, $sunrise, $sunset]' | jq --indent 4 '.'
         ;;
     *)
