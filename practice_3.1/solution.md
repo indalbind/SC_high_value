@@ -1,0 +1,1 @@
+cat file1.txt file2.txt > temp && mv temp file2.txt
