@@ -1,6 +1,6 @@
 # IIT Madras SC Solutions
 
-This repository contains solutions for the IIT Madras SC assignments and exercises. The solutions are organized by topic and are intended to help students understand the concepts better.
+This repository contains solutions for the IIT Madras SC VM assignments and exercises. 
 
 ## Table of Contents
 
@@ -35,3 +35,7 @@ synchro COMMAND
 ### Notes
 
 - The `synchro` command should be run in the same directory as the assignment directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
