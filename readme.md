@@ -1,6 +1,6 @@
-# IIT Madras SC Solutions
+# IIT Madras System Commands Solutions
 
-This repository contains solutions for the IIT Madras SC VM assignments and exercises. 
+This repository contains solutions for the IIT Madras System Commands VM assignments and exercises. 
 
 ## Table of Contents
 
