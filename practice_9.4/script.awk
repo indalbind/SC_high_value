@@ -1,0 +1,7 @@
+{
+    count++
+}
+
+END {
+    print count
+}
