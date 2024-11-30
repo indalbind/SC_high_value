@@ -1,3 +1,5 @@
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/BriskAM/SC-E)
+
 # IIT Madras System Commands Solutions
 
 A comprehensive collection of solutions for IIT Madras System Commands Virtual Machine assignments and exercises. This repository provides tested solutions for various Linux/Unix command-line tasks and system administration problems.
