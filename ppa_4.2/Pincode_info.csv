@@ -1,9 +1,4 @@
-#!/bin/bash
-
-rand_dir=$(mktemp -d XXXXXX)
-pushd "$rand_dir" > /dev/null || exit 1
-
-echo 'Circle Name,Region Name,Division Name,Office Name,Pincode,OfficeType,Delivery,District,StateName
+Circle Name,Region Name,Division Name,Office Name,Pincode,OfficeType,Delivery,District,StateName
 Andhra Pradesh Circle,Kurnool Region,Anantapur Division,A Narayanapuram B.O,515004,BO,Delivery,ANANTHAPUR,Andhra Pradesh
 Andhra Pradesh Circle,Kurnool Region,Anantapur Division,Akuledu B.O,515731,BO,Delivery,ANANTHAPUR,Andhra Pradesh
 Andhra Pradesh Circle,Kurnool Region,Anantapur Division,Alamuru B.O,515002,BO,Delivery,ANANTHAPUR,Andhra Pradesh
@@ -255,10 +250,4 @@ Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Gobichettipalayam S
 Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Greynagar BO,638056,BO,Delivery,ERODE,Tamil Nadu
 Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Ingur BO,638052,BO,Delivery,ERODE,Tamil Nadu
 Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Kadirampatti BO,638107,BO,Delivery,ERODE,Tamil Nadu
-Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Kalbhavi BO,638314,BO,Delivery,ERODE,Tamil Nadu' > Pincode_info.csv
-
-read pin
-pin="$pin" bash "../$(dirname "${BASH_SOURCE[0]}")/pincode.sh" 2>&1 < /dev/null
-
-popd > /dev/null || exit 1
-[[ -d "$rand_dir" ]] && rm "${rand_dir?}" -rf
+Tamilnadu Circle,"Western Region, Coimbatore",Erode Division,Kalbhavi BO,638314,BO,Delivery,ERODE,Tamil Nadu
