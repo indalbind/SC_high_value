@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+# NOT WORKING
 while IFS=',' read -r circle region division office pincode office_type delivery district state; do
     if [[ "$pincode" == "Pincode" ]]; then
         continue
